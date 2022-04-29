@@ -20,7 +20,7 @@ class Movie
    }
 
    public function getMovieDetails() {
-      return '<h3>' .  $this->title . '</h3><li>Year: ' . $this->year . '</li><li>Genre: '. $this->genre . '</li><li>Duration: '. $this->duration . ' min</li></ul>';
+      return '<h3>' .  $this->title . '</h3><ul><li>Year: ' . $this->year . '</li><li>Genre: '. $this->genre . '</li><li>Duration: '. $this->duration . ' min</li></ul>';
    }
 }
 

@@ -30,18 +30,24 @@ class Movie
             <li>Year: ' . $this->year . $this->yearWarning . '</li>
             <li>Genre: '. $this->genre . '</li>
             <li>Duration: '. $this->duration . ' min</li>
-         </ul>'
+         </ul><hr>'
       );
    }
 }
 
 /* movie 1 */
-$movie1 = new Movie('The Matrix', 1999);
-$movie1->setGenre('Action')->setDuration(135);
-echo $movie1->getMovieDetails();
+$movie_1 = new Movie('The Matrix', 1999);
+$movie_1->setGenre('Action')->setDuration(135);
+echo $movie_1->getMovieDetails();
 
 
 /* movie 2 */
-$movie2 = new Movie('The Matrix Reloaded', 2103);
-$movie2->setGenre('Action')->setDuration(138);
-echo $movie2->getMovieDetails();
+$movie_2 = new Movie('The Matrix Reloaded', 2003);
+$movie_2->setGenre('Action')->setDuration(138);
+echo $movie_2->getMovieDetails();
+
+
+/* movie 3 */
+$movie_3 = new Movie('The Matrix Revolutions', 2003);
+$movie_3->setGenre('Action')->setDuration(129);
+echo $movie_3->getMovieDetails();
